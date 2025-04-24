@@ -1,13 +1,3 @@
-// Menu hamburger para mobile
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('toggle');
-});
-
-// Atualize o JavaScript para este novo approach
 document.addEventListener('DOMContentLoaded', function() {
     const carouselInner = document.querySelector('.carousel-inner');
     const items = document.querySelectorAll('.carousel-item');

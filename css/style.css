@@ -1,4 +1,7 @@
-/* Estilos gerais */
+:root {
+    --main-color: #d4a373;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +11,10 @@
 
 body {
     background-color: #f9f5f0;
+}
+
+.blur {
+    filter: blur(4px);
 }
 
 /* Navbar */
@@ -37,13 +44,15 @@ body {
 .logo-text {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #d4a373;
+    color: var(--main-color);
     letter-spacing: 1px;
+    text-decoration: none;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
 }
 
 .nav-links li {
@@ -61,7 +70,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #d4a373;
+    color: var(--main-color);
 }
 
 .nav-links a::after {
@@ -69,7 +78,7 @@ body {
     position: absolute;
     width: 0;
     height: 2px;
-    background: #d4a373;
+    background: var(--main-color);
     bottom: -5px;
     left: 0;
     transition: width 0.3s;
@@ -133,8 +142,28 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Estilos do Carrossel */
-.projects-carousel {
+.wa-button {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.wa-button img {
+    width: 80px;
+    transition: transform 0.5s;
+}
+
+.wa-button img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+    .wa-button img {
+        width: 50px;
+    }
+}
+
+section {
     background-color: #f9f5f0;
     padding: 3rem 5%;
 }
@@ -152,7 +181,7 @@ body {
     display: block;
     width: 80px;
     height: 3px;
-    background: #d4a373;
+    background: var(--main-color);
     margin: 0.5rem auto;
 }
 
@@ -161,123 +190,4 @@ body {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.1rem;
-}
-
-.carousel-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.carousel {
-    display: flex;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    position: relative;
-    height: 500px;
-    width: 100%;
-}
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    height: 100%;
-    width: 100%;
-}
-
-.carousel-item {
-    min-width: 100%;
-    height: 100%;
-    position: relative;
-    flex-shrink: 0;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-.carousel-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(26, 18, 11, 0.6);
-    color: #f8f9fa;
-    padding: 1.5rem;
-    text-align: center;
-}
-
-.carousel-caption h3 {
-    color: #d4a373;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.carousel-caption p {
-    font-size: 1rem;
-}
-
-.carousel-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.5rem;
-}
-
-.prev-btn, .next-btn {
-    background: #1a120b;
-    color: #d4a373;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: all 0.3s;
-}
-
-.prev-btn:hover, .next-btn:hover {
-    background: #d4a373;
-    color: #1a120b;
-}
-
-.indicators {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.indicators span {
-    display: block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #adb5bd;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.indicators span.active {
-    background: #d4a373;
-    transform: scale(1.2);
-}
-
-@media (max-width: 768px) {
-    .carousel {
-        height: 350px;
-    }
-    
-    .carousel-caption {
-        padding: 1rem;
-    }
-    
-    .carousel-caption h3 {
-        font-size: 1.2rem;
-    }
-    
-    .carousel-caption p {
-        font-size: 0.9rem;
-    }
 }

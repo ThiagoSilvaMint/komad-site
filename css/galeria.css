@@ -1,0 +1,35 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 1200px;
+    gap: .5rem;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 2px solid #1a120b;
+    padding: .5rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    color: #1a120b;
+    transition: all .5s;
+}
+
+.gallery-item:hover {
+    font-size: 1.8rem;
+}
+
+.gallery-item:hover p {
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 80%;
+}
