@@ -157,11 +157,7 @@ body {
     transform: scale(1.1);
 }
 
-@media (max-width: 480px) {
-    .wa-button img {
-        width: 50px;
-    }
-}
+
 
 section {
     background-color: #f9f5f0;
@@ -190,4 +186,14 @@ section {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+    .wa-button img {
+        width: 50px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
 }
