@@ -33,3 +33,15 @@
 .gallery-item img {
     width: 80%;
 }
+
+@media (max-width: 730px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
