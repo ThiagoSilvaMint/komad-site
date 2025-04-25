@@ -1,0 +1,36 @@
+.back-btn {
+    display: block;
+    text-decoration: none;
+    color: #1a120b;
+    font-size: 1.5rem;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+.galeria-projeto {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.galeria-projeto img {
+    display: block;
+    width: 30%;
+}
+
+@media (max-width: 1000px) {
+    .galeria-projeto img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 730px) {
+    .galeria-projeto img {
+        width: 100%;
+    }
+}
