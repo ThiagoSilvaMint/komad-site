@@ -28,6 +28,10 @@
     transition: transform .3s;
 }
 
+.beneficio:hover {
+    transform: scale(1.1);
+}
+
 .beneficio h3 {
     color: #b37537;
 }
