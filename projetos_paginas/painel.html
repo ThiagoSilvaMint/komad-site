@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Komad - Projetos</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <title>Komad - Painéis</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="../css/projeto.css">
 
 </head>
 
-<body>
+<body id="body">
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html" class="logo-text">
-                <img src="img/logo.png" alt="Logo Komad Móveis exclusivos">
+            <a href="../index.html" class="logo-text">
+                <img src="../img/logo.png" alt="Logo Komad Móveis exclusivos">
             </a>
         </div>
 
         <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projetos.html">Nossos projetos</a></li>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../projetos.html">Nossos projetos</a></li>
             <li><a href="historia.html">Nossa história</a></li>
         </ul>
 
@@ -35,31 +35,21 @@
 
     <div id="blur">
 
-        <section class="projects">
-            <h2 class="section-title">Nossos Projetos em MDF</h2>
-            <p class="section-subtitle">Clique nas imagens e veja mais...</p>
+        <div class="modal" id="modal"></div>
 
-            <div class="gallery">
-                <a href="projetos_paginas/escritorio.html" class="gallery-item">
-                    <img src="img/escritorios/escritorio1.jpg" alt="Cadeiras">
-                    <p>Escritórios</p>
-                </a>
-                <a href="projetos_paginas/quarto.html" class="gallery-item">
-                    <img src="img/quartos/quarto1.jpeg" alt="Quarto">
-                    <p>Quartos</p>
-                </a>
-                <a href="projetos_paginas/cozinha.html" class="gallery-item">
-                    <img src="img/cozinhas/cozinha1.jpeg" alt="Cozinha">
-                    <p>Cozinhas</p>
-                </a>
-                <a href="projetos_paginas/banheiro.html" class="gallery-item">
-                    <img src="img/banheiros/banheiro1.jpg" alt="Banheiro">
-                    <p>Banheiros</p>
-                </a>
-                <a href="projetos_paginas/painel.html" class="gallery-item">
-                    <img src="img/paineis/painel1.jpg" alt="Painéis">
-                    <p>Painéis</p>
-                </a>
+        <section class="projeto">
+            <a href="../projetos.html" class="back-btn"><i class="ri-arrow-left-line"></i> Voltar para projetos</a>
+
+            <h2 class="section-title">Nossos Painéis</h2>
+
+            <div class="galeria-projeto" id="galeria">
+                <img src="../img/paineis/painel1.jpg">
+                <img src="../img/paineis/painel2.jpg">
+                <img src="../img/paineis/painel3.jpg">
+                <img src="../img/paineis/painel4.jpg">
+                <img src="../img/paineis/painel5.jpg">
+                <img src="../img/paineis/painel6.jpg">
+                <img src="../img/paineis/painel7.jpg">
             </div>
         </section>
 
@@ -99,13 +89,14 @@
         </footer>
 
         <div class="wa-button">
-            <a target="_blank" href="https://wa.me/5524988621913"><img src="img/icon-whatsapp.svg"
+            <a target="_blank" href="https://wa.me/5524988621913"><img src="../img/icon-whatsapp.svg"
                     alt="Whatsapp ícone"></a>
         </div>
 
     </div>
 
-    <script src="js/menuHamburguer.js"></script>
+    <script src="../js/menuHamburguer.js"></script>
+    <script src="../js/modal.js"></script>
 </body>
 
 </html>
