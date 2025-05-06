@@ -57,6 +57,7 @@ body {
     font-weight: 500;
     transition: color 0.3s;
     letter-spacing: 0.5px;
+    text-transform: capitalize;
 }
 
 .nav-links a:hover {
