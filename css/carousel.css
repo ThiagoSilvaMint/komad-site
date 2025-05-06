@@ -119,6 +119,12 @@
     }
 }
 
+@media (max-width: 540px) {
+    .carousel {
+        height: 250px;
+    }
+}
+
 .carousel-btn {
     display: block;
     font-weight: 400;
