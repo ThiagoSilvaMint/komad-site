@@ -57,7 +57,7 @@
 
 .modal img {
     display: block;
-    width: 90%;
+    width: auto;
     max-height: 90vh;
 }
 
