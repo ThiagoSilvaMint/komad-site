@@ -31,4 +31,4 @@ This project is a responsive website developed for a furniture company, designed
 - **HTML5** (semantic markup)
 - **CSS3** (Flexbox, Grid, transitions, media queries)
 - **JavaScript (ES6+)** (DOM manipulation, event handling)
-- **No external libraries** (vanilla JS/CSS for all features)
+- **SASS** (Variables and nesting)
