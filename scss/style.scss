@@ -1,0 +1,22 @@
+@use 'util/variables' as *;
+
+@use 'layout/navbar';
+@use 'layout/main';
+@use 'layout/section';
+@use 'layout/carousel';
+@use 'layout/testimonial';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $main_font;
+}
+
+body {
+    background-color: $body-bg-color;
+}
+
+.blur {
+    filter: blur(4px);
+}

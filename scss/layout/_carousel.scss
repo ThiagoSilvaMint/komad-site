@@ -1,0 +1,151 @@
+@use '../util/variables' as *;
+
+.carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    height: 500px;
+    width: 100%;
+    
+    @media (max-width: 540px) {
+        height: 250px;
+    }
+
+    @media (max-width: 768px) {
+        height: 350px;
+    }
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+}
+
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $carousel-caption-bg-color;
+    color: $carousel-caption-color;
+    padding: 1.5rem;
+    text-align: center;
+    
+    
+    h3 {
+        color: $main-color;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    p {
+        font-size: 1rem;   
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        padding: 1rem;
+        
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.prev-btn, .next-btn {
+    background: $navbar-bg-color;
+    color: $main-color;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+
+    &:hover {
+        background: $main-color;
+        color: $navbar-bg-color;
+    }
+}
+
+
+.indicators {
+    display: flex;
+    gap: 0.5rem;
+
+    span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $indicator-bg-color;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &.active {
+            background: $main-color;
+            transform: scale(1.2);
+        }
+    }
+}
+
+.carousel-btn {
+    display: block;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 1rem auto 0 auto;
+    width: max-content;
+    background-color: $navbar-bg-color;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $carousel-btn-color;
+    }
+
+    &:active {
+        color: $carousel-btn-color;
+        background-color: white;
+        border: 1px solid $carousel-btn-color;
+    }
+}
+
