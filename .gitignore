@@ -1,0 +1,49 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Node (caso use ferramentas JS)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+bun.lockb
+
+# VS Code
+.vscode/
+
+# Arquivos de build (ex: se usar bundlers como Vite, Webpack, etc)
+dist/
+build/
+out/
+
+# Pré-processadores (caso use Sass, TypeScript)
+*.scssc
+*.sass-cache/
+*.tsbuildinfo
+
+# Logs e backups
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Cache de ferramentas
+.cache/
+.parcel-cache/
+.jekyll-cache/
+.next/
+
+# Arquivos temporários comuns
+*.orig
+*.rej
+
+# GitHub Pages (se usar Jekyll com GitHub Pages)
+_site/
+.jekyll-metadata
+
+google9d966791f749a894.html
+sitemap.xml

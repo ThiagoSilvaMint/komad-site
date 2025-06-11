@@ -1,0 +1,70 @@
+@use '../util/variables' as *;
+
+.testimonial {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.testimonial-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+.card {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    background-color: $navbar-bg-color;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px $card-shadow-color;
+    cursor: pointer;
+    transition: transform .3s;
+
+    h3, i {
+        color: $card-main-color;
+    }
+
+    p {
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    i {
+        font-size: 2.5rem;
+    }
+    
+    hr {
+        width: 40px;
+        margin: auto;
+    }
+    
+    h3 {
+        font-size: .9rem;
+        font-weight: 400;
+        transition: .3s;
+    }
+    
+    &:hover {
+        transform: scale(1.1);
+
+        @media (max-width: 900px) {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 650px) {
+            transform: scale(1.025);
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@use "../util/variables" as *;
+
+.container {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+
+    img {
+        width: 30%;
+    }
+    
+    p {
+        text-align: justify;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        font-family: $historia-font;
+    }
+    
+    h4 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $galeria-title-color;
+        text-align: center;
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+
+        img {
+            width: 80%;
+        }
+    }
+}
+
+.story .section-subtitle {
+    font-size: 1.3rem;
+}

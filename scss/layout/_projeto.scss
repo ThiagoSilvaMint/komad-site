@@ -1,0 +1,77 @@
+@use '../util/variables' as *;
+
+.back-btn {
+    display: block;
+    text-decoration: none;
+    color: $navbar-bg-color;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.galeria-projeto {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    img {
+        display: block;
+        width: 30%;
+        cursor: pointer;
+
+        @media (max-width: 1000px) {
+            width: 45%;
+        }
+
+        @media (max-width: 730px) {
+            width: 100%;
+        }
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $navbar-bg-color;
+    z-index: 1001;
+    align-items: center;
+    padding: 1vw;
+    justify-content: center;
+
+    &.active {
+        display: flex;
+    }
+    
+    img {
+        display: block;
+        width: auto;
+        max-height: 90vh;
+    }
+    
+    i {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+body {
+    &.hidden {
+        overflow: hidden;
+    }
+}
