@@ -1,13 +1,12 @@
-@use 'util/variables' as *;
+@use "util/variables" as *;
 
-@use 'layout/reset';
-@use 'layout/navbar';
-@use 'layout/main';
-@use 'layout/section';
-@use 'layout/carousel';
-@use 'layout/testimonial';
-@use 'layout/beneficio';
-@use 'layout/footer';
-@use 'layout/galeria';
-@use 'layout/historia';
-@use 'layout/projeto';
+@use "layout/reset";
+@use "layout/navbar";
+@use "layout/main";
+@use "layout/section";
+@use "layout/testimonial";
+@use "layout/beneficio";
+@use "layout/footer";
+@use "layout/galeria";
+@use "layout/historia";
+@use "layout/projeto";
