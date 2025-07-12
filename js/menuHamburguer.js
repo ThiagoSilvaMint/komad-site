@@ -1,9 +1,15 @@
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
-const blurDiv = document.querySelector("#blur");
+const navLink = document.querySelectorAll(".nav-link");
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     hamburger.classList.toggle('toggle');
-    blurDiv.classList.toggle('blur');
+});
+
+navLink.forEach(link => {
+    link.addEventListener("click", e => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('toggle');
+    });
 });
