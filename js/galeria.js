@@ -48,7 +48,7 @@ const imagesSrc = {
 }
 
 function addImages(buttonID) {
-    deleteChildren(imagesContainer);
+    imagesContainer.innerHTML = '';
 
     let images = imagesSrc[buttonID];
     
@@ -66,14 +66,6 @@ function toggleActivedButton(e) {
     });
     target.classList.add("active");
     addImages(target.id);
-}
-
-function deleteChildren(e) {
-    let child = e.lastElementChild;
-    while (child) {
-        e.removeChild(child);
-        child = e.lastElementChild;
-    }
 }
 
 addImages("escritorios");
