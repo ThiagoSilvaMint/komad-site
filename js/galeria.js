@@ -47,17 +47,10 @@ const imagesSrc = {
     ]
 }
 
-function addImages() {
+function addImages(buttonID) {
     deleteChildren(imagesContainer);
 
-    let activedButton;
-    buttons.forEach(button => {
-        if (button.classList.contains('active')) {
-            activedButton = button.id;
-        }
-    });
-
-    let images = imagesSrc[activedButton];
+    let images = imagesSrc[buttonID];
     
     images.forEach(image => {
         let newImage = document.createElement('img');
@@ -72,7 +65,7 @@ function toggleActivedButton(e) {
         button.classList.remove('active');
     });
     target.classList.add("active");
-    addImages();
+    addImages(target.id);
 }
 
 function deleteChildren(e) {
@@ -83,4 +76,4 @@ function deleteChildren(e) {
     }
 }
 
-addImages();
+addImages("escritorios");
