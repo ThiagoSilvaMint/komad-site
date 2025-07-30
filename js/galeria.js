@@ -19,7 +19,7 @@ const imagesSrc = {
         "img/cozinhas/cozinha3.webp",
         "img/cozinhas/cozinha4.webp",
         "img/cozinhas/cozinha5.webp",
-        "img/cozinhas/cozinha5.webp",
+        "img/cozinhas/cozinha6.webp",
     ],
     "escritorios": [
         "img/escritorios/escritorio1.webp",
