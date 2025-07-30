@@ -30,9 +30,9 @@ const imagesSrc = {
         "img/escritorios/escritorio6.webp",
     ],
     "paineis": [
-        "img/paineis/painel1.webp",
+        "img/paineis/painel9.webp",
         "img/paineis/painel2.webp",
-        "img/paineis/painel3.webp",
+        "img/paineis/painel8.webp",
         "img/paineis/painel4.webp",
         "img/paineis/painel5.webp",
         "img/paineis/painel6.webp",
